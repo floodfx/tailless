@@ -1,0 +1,20 @@
+dl {
+  @apply divide-y divide-slate-200;
+}
+
+dt {
+  @apply text-base font-serif font-semibold text-slate-700 mt-2;
+}
+
+dd {
+  @apply text-sm;
+}
+
+ol {
+  @apply pl-2 list-decimal list-inside;
+}
+
+ul {
+  @apply pl-2 list-disc list-inside;
+}
+

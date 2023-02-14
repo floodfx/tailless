@@ -1,0 +1,49 @@
+
+form {
+  @apply bg-white shadow-md rounded-lg mx-2 my-4 md:mx-4 md:my-2 px-2 py-4 md:px-4 md:py-2;
+}
+
+label {
+  @apply text-slate-700 text-sm font-semibold;
+}
+
+input,select,button,textarea {
+  @apply font-sans;
+}
+
+._input_base {
+  @apply rounded-md py-2 border-slate-300 focus:border-blue-500 focus:ring-blue-500 focus:outline-none sm:text-sm;
+}
+
+input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"],input[type="week"],input[type="time"],input[type="range"],input[type="file"] {
+  @apply _input_base;
+}
+
+input[type="color"] {
+  @apply appearance-none w-10 h-10 p-0 m-0 border-0 bg-inherit;
+}
+
+select {
+  @apply _input_base;
+}
+
+textarea {
+  @apply _input_base;
+}
+
+._button_base {
+  @apply font-sans text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded-md px-4 py-2;
+}
+input[type="submit"],input[type="reset"],input[type="button"],button[type="submit"],button[type="reset"],button[type="button"] {
+  @apply _input_base _button_base disabled:opacity-50;
+}
+
+input[type="checkbox"],input[type="radio"] {
+  @apply text-blue-500 focus:ring-blue-500 border-gray-300;
+}
+label:has(> input[type="checkbox"]){
+  @apply flex items-center justify-start gap-x-2;
+}
+label:has(> input[type="radio"]){
+  @apply flex items-center justify-start gap-x-2;
+}

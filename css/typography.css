@@ -1,0 +1,49 @@
+
+
+h1 {
+  @apply font-bold font-serif text-4xl tracking-wider leading-loose text-slate-900;
+}
+
+h2 {
+  @apply font-bold font-serif text-3xl tracking-wider leading-loose text-slate-900;
+}
+
+h3 {
+  @apply font-bold font-serif text-2xl tracking-wider leading-loose text-slate-900;
+}
+
+h4 {
+  @apply font-semibold font-sans text-xl uppercase tracking-wide leading-relaxed text-slate-700;
+}
+
+h5 {
+  @apply font-semibold font-sans text-lg uppercase tracking-wide leading-relaxed text-slate-700;
+}
+
+h6 {
+  @apply font-semibold font-sans text-base uppercase tracking-wide leading-relaxed text-slate-700;
+}
+
+p {
+  @apply font-sans text-base tracking-tight max-w-prose pt-2;
+}
+
+a {
+  @apply text-blue-600 underline;
+}
+
+blockquote {
+  @apply font-serif italic text-lg tracking-wide leading-relaxed max-w-prose bg-slate-200 border-l-4 border-l-slate-300 border-solid;
+}
+
+._cite_base {
+  @apply font-sans font-medium italic tracking-wide leading-relaxed;
+}
+
+blockquote > cite {
+  @apply _cite_base text-xl;
+}
+
+cite {
+  @apply _cite_base text-sm;
+}

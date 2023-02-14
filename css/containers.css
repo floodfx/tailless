@@ -1,0 +1,24 @@
+
+nav {
+  @apply py-4 mb-4 border-b-2 border-slate-200;
+}
+
+nav > ul {
+  @apply flex flex-row justify-between items-center list-none space-x-4;
+}
+
+main {
+  @apply bg-slate-50 p-4;
+}
+
+section {
+  @apply bg-slate-100 rounded-lg border border-slate-200 p-4 space-y-4;
+}
+
+article {
+  @apply bg-white rounded-md p-4;
+}
+
+footer {
+  @apply bg-white
+}

@@ -1,0 +1,30 @@
+{
+  "name": "taillesscss",
+  "version": "0.0.1",
+  "description": "classless css using tailwind css",
+  "scripts": {
+    "build": "tailwindcss -i ./css/tailless.css -o ./dist/tailless.css",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floodfx/tailless.git"
+  },
+  "keywords": [
+    "classless",
+    "css",
+    "tailwind"
+  ],
+  "author": "Donnie Flood <donnie@floodfx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floodfx/tailless/issues"
+  },
+  "homepage": "https://github.com/floodfx/tailless#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "esbuild": "^0.17.8",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.6"
+  }
+}
