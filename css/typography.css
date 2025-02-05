@@ -1,39 +1,40 @@
-
-
 h1 {
-  @apply font-bold font-serif text-4xl tracking-wider leading-loose text-slate-900;
+  @apply font-bold text-4xl tracking-wider leading-loose text-slate-700;
 }
 
 h2 {
-  @apply font-bold font-serif text-3xl tracking-wider leading-loose text-slate-900;
+  @apply font-bold text-3xl tracking-wider leading-loose text-slate-700;
 }
 
 h3 {
-  @apply font-bold font-serif text-2xl tracking-wider leading-loose text-slate-900;
+  @apply font-bold text-2xl tracking-wider leading-loose text-slate-700;
 }
 
 h4 {
-  @apply font-semibold font-sans text-xl uppercase tracking-wide leading-relaxed text-slate-700;
+  @apply font-semibold text-xl uppercase tracking-wide leading-relaxed text-slate-600;
 }
 
 h5 {
-  @apply font-semibold font-sans text-lg uppercase tracking-wide leading-relaxed text-slate-700;
+  @apply font-semibold text-lg uppercase tracking-wide leading-relaxed text-slate-600;
 }
 
 h6 {
-  @apply font-semibold font-sans text-base uppercase tracking-wide leading-relaxed text-slate-700;
+  @apply font-semibold text-base uppercase tracking-wide leading-relaxed text-slate-600;
 }
 
 p {
-  @apply font-sans text-base tracking-tight max-w-prose pt-2;
+  @apply text-base tracking-tight max-w-prose pt-2;
 }
 
 a {
-  @apply text-blue-600 underline;
+  @apply text-blue-600;
+}
+a:hover {
+  @apply text-blue-700 underline;
 }
 
 blockquote {
-  @apply font-serif italic text-lg tracking-wide leading-relaxed max-w-prose bg-slate-200 border-l-4 border-l-slate-300 border-solid;
+  @apply p-6 font-serif italic text-lg tracking-wide leading-relaxed max-w-prose bg-slate-50 border-l-4 border-l-slate-200 border-solid;
 }
 
 ._cite_base {
@@ -46,4 +47,41 @@ blockquote > cite {
 
 cite {
   @apply _cite_base text-sm;
+}
+
+pre {
+   @apply flex max-w-screen-lg;
+}
+
+pre code,
+pre samp {
+  @apply m-0 relative px-4 py-2 border-l-2 border-l-gray-200 overflow-scroll;
+} 
+
+code, kbd, samp {
+	@apply my-1 py-1 font-mono bg-gray-100 rounded-md inline-block;
+}
+
+kbd {
+  @apply border border-gray-300;
+}
+
+abbr:hover {	
+  @apply cursor-help;
+}
+
+mark {
+  @apply rounded-md p-1 border border-gray-100;
+}
+
+details {
+  @apply mx-5;
+}
+
+details summary {
+  @apply font-semibold cursor-pointer;
+}
+
+sup {
+  @apply relative text-xs rounded-md font-semibold m-[0.2rem] p-[0.2rem] bg-gray-100 -top-2;
 }

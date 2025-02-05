@@ -1,0 +1,32 @@
+
+nav {
+  @apply flex justify-between items-center font-semibold mb-10;
+}
+
+nav > ul {
+  @apply list-none space-x-4 bg-white;
+}
+
+nav ul li {
+  @apply relative inline-block my-2 text-left;
+}
+
+/* Nav Dropdown */
+nav ul li:hover ul {
+    @apply block ;
+}
+
+nav ul li ul {
+    @apply hidden absolute bg-white border border-gray-50 shadow-md h-auto -left-2 top-7 px-2 py-4 whitespace-nowrap w-auto z-10;
+}
+
+nav ul li ul::before {
+    @apply absolute left-0 right-0 -top-2 h-2;
+    /* fill gap above to make mousing over them easier */
+    content: "";
+}
+
+nav ul li ul li,
+nav ul li ul li a {
+    display: block;
+}
