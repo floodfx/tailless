@@ -11,10 +11,14 @@ dd {
 }
 
 ol {
-  @apply pl-2 list-decimal list-inside;
+  @apply list-decimal list-inside;
 }
 
 ul {
-  @apply pl-2 list-disc list-inside;
+  @apply list-disc list-inside;
+}
+
+li > ol, li > ul {
+  @apply ml-4;
 }
 

@@ -1,15 +1,8 @@
 @layer base {
   html {
-    @apply font-sans bg-slate-50 text-slate-900;
+    @apply font-sans bg-white text-slate-800;
   }
 
-  abbr:hover {	
-	  @apply cursor-help;
-  }
+  
 
-  blockquote {
-    padding: 1.5rem;
-    background: var(--nc-bg-2);
-    border-left: 5px solid var(--nc-bg-3);
-  }
 }
